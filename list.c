@@ -1,6 +1,5 @@
 #include "DS.h"
 
-/* p-ийн зааж буй List-д x утгыг төгсгөлд хийнэ */
 void l_push_back(List *p, int x)
 {
 	if (p->l_len >= 100) return;
@@ -8,9 +7,6 @@ void l_push_back(List *p, int x)
 	p->l_len++;
 }
 
-/* p-ийн зааж буй List-д x утгыг эхэнд хийнэ
-   Бүх элементүүд нэг нэг байрлал хойшилно.
- */
 void l_push_front(List *p, int x)
 {
 	int i;
@@ -44,9 +40,6 @@ void l_insert(List *p, int x, int pos)
 	p->l_len++;
 }
 
-/* p-ийн зааж буй List-н эхлэлээс гаргана.
-   List-ийн бүх элементүүд нэг нэг байрлал урагшилна
- */
 void l_pop_front(List *p)
 {
 	int i;
@@ -77,8 +70,6 @@ void l_erase(List *p, int pos)
 	}
 	p->l_len--;
 }
-
-/* p-ийн зааж буй List-н утгуудыг хэвлэнэ */
 void l_print(List *p)
 {
 	int i;
@@ -88,9 +79,6 @@ void l_print(List *p)
 	printf("\n");
 }
 
-/* p-ийн зааж буй List-с x тоог хайн олдсон байрлалаыг буцаана.
-   Олдохгүй бол -1 утгыг буцаана.
- */
 int l_search(List *p, int x)
 {
 	int i;
