@@ -71,6 +71,7 @@ void l_print(List *p)
         printf("\n");
 }
 
+
 int l_search(List *p, int x)
 {
 	int i;
