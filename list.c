@@ -18,11 +18,6 @@ void l_push_front(List *p, int x)
 	p->l_len++;
 }
 
-/*
-  p-ийн зааж буй List-д x утгыг pos байрлалд хийнэ
-  pos болон түүнээс хойшхи элементүүд нэг байрлал ухарна.
-  Тухайн байрлал List-ийн сүүлийн индексээс их бол төгсгөлд орно.
- */
 void l_insert(List *p, int x, int pos)
 {
 	int i;
@@ -50,17 +45,12 @@ void l_pop_front(List *p)
 	p->l_len--;
 }
 
-/* p-ийн зааж буй List-н төгсгөлөөс гаргана */
 void l_pop_back(List *p)
 {
 	if (p->l_len <= 0) return;
 	p->l_len--;
 }
 
-/* p-ийн зааж буй List-н pos байрлалаас гаргана.
-   pos болон түүнээс хойшхи элементүүд нэг байрлал урагшилна.
-   pos байрлалаас гарах боломжгүй бол юу ч хийхгүй.
- */
 void l_erase(List *p, int pos)
 {
 	int i;

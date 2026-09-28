@@ -1,6 +1,5 @@
 #include "DS.h"
 
-/* p-ийн зааж буй Queue-д x утгыг хийнэ */
 void q_push(Queue *p, int x)
 {
 	if (p->q_len >= 100) return;
@@ -8,7 +7,6 @@ void q_push(Queue *p, int x)
 	p->q_len++;
 }
 
-/* p-ийн зааж буй Queue-с гаргана */
 void q_pop(Queue *p)
 {
 	int i;
@@ -19,7 +17,6 @@ void q_pop(Queue *p)
 	p->q_len--;
 }
 
-/* p-ийн зааж буй Queue-н утгуудыг хэвлэнэ */
 void q_print(Queue *p)
 {
 	int i;
